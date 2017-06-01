@@ -63,26 +63,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 9, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 13, ../scss/style.scss */
+/* line 24, ../scss/style.scss */
 .wrap {
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
 }
 
-/* line 19, ../scss/style.scss */
+/* line 30, ../scss/style.scss */
 .header {
   display: block;
   position: relative;
@@ -91,19 +91,19 @@ a {
   background: black;
   margin: 0 auto;
 }
-/* line 26, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 .header img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 30, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 .header .topbar {
   position: absolute;
   width: 100%;
   height: 52px;
   background: RGBA(6, 0, 0, 0.7);
 }
-/* line 36, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 .header .logo {
   display: inline-block;
   color: white;
@@ -111,7 +111,7 @@ a {
   padding-top: 10px;
   padding-left: 50px;
 }
-/* line 43, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 .header .slogan {
   text-align: center;
   position: absolute;
@@ -125,53 +125,53 @@ a {
   background: RGBA(6, 0, 0, 0.3);
   color: white;
 }
-/* line 55, ../scss/style.scss */
+/* line 66, ../scss/style.scss */
 .header .slogan h1 {
   padding-top: 30px;
   padding-bottom: 10px;
   font-size: 30px;
 }
-/* line 60, ../scss/style.scss */
+/* line 71, ../scss/style.scss */
 .header .slogan p {
   padding-bottom: 5px;
 }
-/* line 64, ../scss/style.scss */
+/* line 75, ../scss/style.scss */
 .header ul {
   float: right;
 }
-/* line 66, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 .header ul li {
   float: left;
   line-height: 52px;
   padding-top: 10px;
   padding-right: 40px;
 }
-/* line 71, ../scss/style.scss */
+/* line 82, ../scss/style.scss */
 .header ul li a {
   color: RGBA(208, 207, 207, 1);
 }
-/* line 73, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 .header ul li a:hover {
   transition: color 0.4s;
   color: white;
 }
 
-/* line 82, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 .features {
   display: block;
   background: RGBA(239, 233, 231, 1);
   max-width: 1000px;
   width: 100%;
-  height: 560px;
   padding: 10px 0;
   text-align: center;
+  *zoom: 1;
 }
-/* line 90, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 .features .outside {
   max-width: 100%;
   display: block;
 }
-/* line 94, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 .features .border {
   display: inline-block;
   width: 17.3333%;
@@ -179,7 +179,7 @@ a {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 101, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .features .title {
   width: 24.3333%;
   border: solid 0px red;
@@ -187,20 +187,20 @@ a {
   padding-top: 50px;
   margin-bottom: 0;
 }
-/* line 108, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 .features h2 {
   line-height: 40px;
   font-size: 23px;
   color: RGBA(77, 36, 23, 1);
 }
-/* line 113, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 .features #pics {
   display: inline-block;
   max-width: 100%;
   width: 100%;
   padding: 20px 0;
 }
-/* line 119, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .features .pics {
   display: inline-block;
   max-width: calc(100%/3);
@@ -208,14 +208,23 @@ a {
   font-size: 18px;
   color: RGBA(98, 62, 49, 1);
 }
-/* line 126, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .features .pics img {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   padding-bottom: 10px;
 }
-/* line 133, ../scss/style.scss */
+/* line 4, ../scss/style.scss */
+.features:after, .features:before {
+  content: "";
+  display: table;
+}
+/* line 8, ../scss/style.scss */
+.features:after {
+  clear: both;
+}
+/* line 145, ../scss/style.scss */
 .features .point {
   max-width: calc(100%/3);
   padding: 0 4%;
@@ -225,58 +234,58 @@ a {
   margin-bottom: 50px;
 }
 
-/* line 145, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 .chef {
-  clear: both;
   background: RGBA(61, 17, 1, 1);
   max-width: 100%;
 }
-/* line 150, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 .chef .pic {
   display: inline-block;
   max-width: 50%;
 }
-/* line 153, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .chef .pic img {
   margin-left: 40px;
 }
-/* line 157, ../scss/style.scss */
+/* line 166, ../scss/style.scss */
 .chef .text {
   color: RGBA(239, 233, 231, 1);
   float: right;
   max-width: 50%;
   padding: 100px 40px;
 }
-/* line 162, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .chef .text h3 {
   padding: 5px 0;
 }
-/* line 165, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .chef .text div {
   font-size: 16px;
   padding-bottom: 30px;
 }
-/* line 169, ../scss/style.scss */
+/* line 178, ../scss/style.scss */
 .chef .text p {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 175, ../scss/style.scss */
+/* line 184, ../scss/style.scss */
 .listen {
   background-color: RGBA(239, 233, 231, 1);
   max-width: 100%;
   width: 100%;
   text-align: center;
+  *zoom: 1;
 }
-/* line 180, ../scss/style.scss */
+/* line 189, ../scss/style.scss */
 .listen h3 {
   color: RGBA(66, 23, 7, 1);
   font-size: 22px;
   text-align: center;
   padding: 50px 0;
 }
-/* line 186, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .listen .pics {
   display: inline-block;
   width: calc(93%/3);
@@ -286,28 +295,71 @@ a {
   text-align: left;
   padding-left: 30px;
 }
-/* line 194, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 .listen .pics img {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 199, ../scss/style.scss */
+/* line 208, ../scss/style.scss */
 .listen .pics p {
   position: absolute;
   display: inline-block;
   line-height: 67px;
   padding-left: 15px;
 }
-
-/* line 207, ../scss/style.scss */
-.info {
-  background: blue;
-  max-width: 100%;
-  height: 300px;
+/* line 4, ../scss/style.scss */
+.listen:after, .listen:before {
+  content: "";
+  display: table;
+}
+/* line 8, ../scss/style.scss */
+.listen:after {
+  clear: both;
+}
+/* line 216, ../scss/style.scss */
+.listen .text {
+  max-width: calc(93%/3);
+  padding: 0 5%;
+  margin: 10px 0;
+  float: right;
+  line-height: 25px;
+  color: RGBA(132, 104, 94, 1);
+}
+/* line 224, ../scss/style.scss */
+.listen .text p {
+  color: RGBA(173, 152, 145, 1);
+  margin: 15px 0 30px 0;
+  text-align: right;
 }
 
-/* line 212, ../scss/style.scss */
+/* line 231, ../scss/style.scss */
+.location {
+  text-align: center;
+  background: RGBA(246, 244, 243, 1);
+  max-width: 100%;
+  width: 100%;
+  padding: 30px 0;
+}
+/* line 237, ../scss/style.scss */
+.location h3 {
+  font-size: 20px;
+  color: RGBA(61, 17, 5, 1);
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+/* line 244, ../scss/style.scss */
+.location span {
+  max-width: calc(98%/2);
+  display: inline-block;
+}
+/* line 251, ../scss/style.scss */
+.location .form input[type="text"] {
+  width: 100%;
+}
+
+/* line 256, ../scss/style.scss */
 .footer {
   background: pink;
   max-width: 100%;
