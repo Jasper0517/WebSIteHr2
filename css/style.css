@@ -92,18 +92,23 @@ a {
   margin: 0 auto;
 }
 /* line 37, ../scss/style.scss */
+.header #content {
+  display: none;
+  overflow: hidden;
+}
+/* line 41, ../scss/style.scss */
 .header img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 41, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 .header .topbar {
   position: absolute;
   width: 100%;
   max-height: 52px;
   background: RGBA(6, 0, 0, 0.7);
 }
-/* line 47, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .header .logo {
   display: inline-block;
   color: white;
@@ -111,7 +116,14 @@ a {
   padding-top: 10px;
   padding-left: 50px;
 }
-/* line 54, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
+.header .logo p {
+  position: fixed;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 64, ../scss/style.scss */
 .header .slogan {
   text-align: center;
   position: absolute;
@@ -125,83 +137,108 @@ a {
   background: RGBA(6, 0, 0, 0.3);
   color: white;
 }
-/* line 66, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 .header .slogan h1 {
   padding-top: 30px;
   padding-bottom: 10px;
   font-size: 30px;
 }
-/* line 71, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 .header .slogan p {
   padding-bottom: 5px;
 }
-/* line 74, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 .header .slogan .fork {
   display: inline-block;
-  max-width: 100%;
+  width: 10px;
 }
-/* line 79, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 .header ul {
   float: right;
 }
-/* line 81, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .header ul li {
   float: left;
   line-height: 52px;
   padding-top: 10px;
   padding-right: 40px;
 }
-/* line 86, ../scss/style.scss */
+/* line 96, ../scss/style.scss */
 .header ul li a {
   color: RGBA(208, 207, 207, 1);
 }
-/* line 88, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .header ul li a:hover {
   transition: color 0.4s;
   color: white;
 }
 
 @media (max-width: 767px) {
-  /* line 100, ../scss/style.scss */
+  /* line 109, ../scss/style.scss */
+  .header .slogan {
+    background: none;
+  }
+  /* line 111, ../scss/style.scss */
   .header .slogan p {
     display: none;
   }
-  /* line 103, ../scss/style.scss */
+  /* line 114, ../scss/style.scss */
   .header .slogan h1 {
-    font-size: 28px;
+    font-size: 19px;
   }
 }
 @media (max-width: 500px) {
-  /* line 112, ../scss/style.scss */
+  /* line 123, ../scss/style.scss */
   .header .slogan {
     display: none;
   }
-  /* line 115, ../scss/style.scss */
+  /* line 126, ../scss/style.scss */
   .header .logo {
     padding-left: 5px;
   }
-  /* line 118, ../scss/style.scss */
+  /* line 129, ../scss/style.scss */
   .header ul {
     display: none;
     overflow: hidden;
   }
+  /* line 139, ../scss/style.scss */
+  .header #content {
+    display: inline-flex;
+    position: fixed;
+    right: 10px;
+    background-color: RGBA(6, 0, 0, 0.8);
+    margin-top: 8px;
+    max-height: 30px;
+    cursor: pointer;
+  }
+  /* line 150, ../scss/style.scss */
+  .header .contentshow {
+    transition: 2s background-color;
+    background-color: RGBA(6, 0, 0, 0.8);
+    height: 150px;
+    position: absolute;
+  }
+  /* line 158, ../scss/style.scss */
+  .header #contentmain {
+    max-width: 50%;
+  }
 }
-/* line 126, ../scss/style.scss */
+/* line 165, ../scss/style.scss */
 .features {
+  position: relative;
   display: block;
   background: RGBA(239, 233, 231, 1);
   max-width: 1000px;
   width: 100%;
   padding: 10px 0;
   text-align: center;
-  *zoom: 1;
 }
-/* line 134, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .features .outside {
   max-width: 100%;
   display: block;
 }
-/* line 138, ../scss/style.scss */
+/* line 178, ../scss/style.scss */
 .features .border {
   display: inline-block;
   width: 17.3333%;
@@ -209,7 +246,7 @@ a {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 145, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .features .title {
   width: 24.3333%;
   border: solid 0px red;
@@ -217,28 +254,32 @@ a {
   padding-top: 50px;
   margin-bottom: 0;
 }
-/* line 152, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .features h2 {
   line-height: 40px;
   font-size: 23px;
   color: RGBA(77, 36, 23, 1);
 }
-/* line 157, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .features #pics {
   display: inline-block;
   max-width: 100%;
   width: 100%;
   padding: 20px 0;
 }
-/* line 163, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 .features .pics {
   display: inline-block;
-  max-width: calc(100%/3);
-  margin: 0 50px;
+  max-width: calc(90%/3);
   font-size: 18px;
   color: RGBA(98, 62, 49, 1);
+  *zoom: 1;
 }
-/* line 170, ../scss/style.scss */
+/* line 210, ../scss/style.scss */
+.features .pics h3 {
+  margin-bottom: 10px;
+}
+/* line 213, ../scss/style.scss */
 .features .pics img {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -246,17 +287,16 @@ a {
   padding-bottom: 10px;
 }
 /* line 4, ../scss/style.scss */
-.features:after, .features:before {
+.features .pics:after, .features .pics:before {
   content: "";
   display: table;
 }
 /* line 8, ../scss/style.scss */
-.features:after {
+.features .pics:after {
   clear: both;
 }
-/* line 178, ../scss/style.scss */
-.features .point {
-  max-width: calc(100%/3);
+/* line 220, ../scss/style.scss */
+.features .pics p {
   padding: 0 4%;
   float: left;
   color: RGBA(98, 62, 49, 1);
@@ -264,43 +304,67 @@ a {
   margin-bottom: 50px;
 }
 
-/* line 188, ../scss/style.scss */
+@media (max-width: 1000px) {
+  /* line 232, ../scss/style.scss */
+  h2 {
+    font-size: 15px;
+    color: RGBA(77, 36, 23, 1);
+  }
+}
+@media (max-width: 768px) {
+  /* line 240, ../scss/style.scss */
+  .border {
+    display: none;
+    overflow: hidden;
+  }
+}
+@media (max-width: 700px) {
+  /* line 247, ../scss/style.scss */
+  .features {
+    position: relative;
+  }
+  /* line 249, ../scss/style.scss */
+  .features .pics {
+    max-width: 50%;
+  }
+}
+/* line 261, ../scss/style.scss */
 .chef {
   background: RGBA(61, 17, 1, 1);
   max-width: 100%;
 }
-/* line 192, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 .chef .pic {
   display: inline-block;
   max-width: 50%;
 }
-/* line 195, ../scss/style.scss */
+/* line 268, ../scss/style.scss */
 .chef .pic img {
   margin-left: 40px;
 }
-/* line 199, ../scss/style.scss */
+/* line 272, ../scss/style.scss */
 .chef .text {
   color: RGBA(239, 233, 231, 1);
   float: right;
   max-width: 50%;
   padding: 100px 40px;
 }
-/* line 204, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .chef .text h3 {
   padding: 5px 0;
 }
-/* line 207, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .chef .text div {
   font-size: 16px;
   padding-bottom: 30px;
 }
-/* line 211, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 .chef .text p {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 217, ../scss/style.scss */
+/* line 290, ../scss/style.scss */
 .listen {
   background-color: RGBA(239, 233, 231, 1);
   max-width: 100%;
@@ -308,14 +372,14 @@ a {
   text-align: center;
   *zoom: 1;
 }
-/* line 222, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
 .listen h3 {
   color: RGBA(66, 23, 7, 1);
   font-size: 22px;
   text-align: center;
   padding: 50px 0;
 }
-/* line 228, ../scss/style.scss */
+/* line 301, ../scss/style.scss */
 .listen .pics {
   display: inline-block;
   width: calc(93%/3);
@@ -325,13 +389,13 @@ a {
   text-align: left;
   padding-left: 30px;
 }
-/* line 236, ../scss/style.scss */
+/* line 309, ../scss/style.scss */
 .listen .pics img {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 241, ../scss/style.scss */
+/* line 314, ../scss/style.scss */
 .listen .pics p {
   position: absolute;
   display: inline-block;
@@ -347,7 +411,7 @@ a {
 .listen:after {
   clear: both;
 }
-/* line 249, ../scss/style.scss */
+/* line 322, ../scss/style.scss */
 .listen .text {
   max-width: calc(93%/3);
   padding: 0 5%;
@@ -356,14 +420,14 @@ a {
   line-height: 25px;
   color: RGBA(132, 104, 94, 1);
 }
-/* line 257, ../scss/style.scss */
+/* line 330, ../scss/style.scss */
 .listen .text p {
   color: RGBA(173, 152, 145, 1);
   margin: 15px 0 30px 0;
   text-align: right;
 }
 
-/* line 264, ../scss/style.scss */
+/* line 337, ../scss/style.scss */
 .location {
   text-align: center;
   background: RGBA(246, 244, 243, 1);
@@ -371,7 +435,7 @@ a {
   width: 100%;
   padding: 50px 0;
 }
-/* line 270, ../scss/style.scss */
+/* line 343, ../scss/style.scss */
 .location h3 {
   font-size: 20px;
   color: RGBA(61, 17, 5, 1);
@@ -380,7 +444,7 @@ a {
   letter-spacing: 2px;
   padding-bottom: 20px;
 }
-/* line 278, ../scss/style.scss */
+/* line 351, ../scss/style.scss */
 .location span {
   max-width: calc(98%/2);
   display: inline-block;
@@ -395,25 +459,25 @@ a {
 .location span:after {
   clear: both;
 }
-/* line 283, ../scss/style.scss */
+/* line 356, ../scss/style.scss */
 .location img {
   max-width: 100%;
   padding-left: 30px;
   padding-right: 10px;
 }
-/* line 288, ../scss/style.scss */
+/* line 361, ../scss/style.scss */
 .location .form {
   width: 90%;
   text-align: left;
   float: right;
   color: RGBA(108, 77, 66, 1);
 }
-/* line 293, ../scss/style.scss */
+/* line 366, ../scss/style.scss */
 .location .form p {
   padding: 10px 0;
   font-size: 14px;
 }
-/* line 297, ../scss/style.scss */
+/* line 370, ../scss/style.scss */
 .location .form input[type="text"] {
   display: block;
   width: 90%;
@@ -421,7 +485,7 @@ a {
   border: 1px solid RGBA(206, 206, 206, 1);
   border-radius: 5px;
 }
-/* line 304, ../scss/style.scss */
+/* line 377, ../scss/style.scss */
 .location .form input[type="submit"] {
   width: 70px;
   height: 35px;
@@ -432,36 +496,36 @@ a {
   border: none;
   border-radius: 5px;
 }
-/* line 315, ../scss/style.scss */
+/* line 388, ../scss/style.scss */
 .location .form input[type="radio"] {
   margin-right: 20px;
 }
-/* line 318, ../scss/style.scss */
+/* line 391, ../scss/style.scss */
 .location .form .orange {
   background-color: RGBA(245, 108, 35, 0.5);
   margin-right: 50px;
 }
-/* line 321, ../scss/style.scss */
+/* line 394, ../scss/style.scss */
 .location .form .orange:hover {
   transition: background-color 1s;
   background-color: RGBA(245, 108, 35, 1);
 }
-/* line 326, ../scss/style.scss */
+/* line 399, ../scss/style.scss */
 .location .form .gray {
   background-color: RGBA(160, 158, 158, 0.5);
 }
-/* line 328, ../scss/style.scss */
+/* line 401, ../scss/style.scss */
 .location .form .gray:hover {
   transition: background-color 1s;
   background-color: RGBA(160, 158, 158, 1);
 }
-/* line 333, ../scss/style.scss */
+/* line 406, ../scss/style.scss */
 .location .form div {
   width: 90%;
   text-align: right;
 }
 
-/* line 339, ../scss/style.scss */
+/* line 412, ../scss/style.scss */
 .footer {
   background: RGBA(239, 233, 231, 1);
   max-width: 100%;
@@ -477,39 +541,39 @@ a {
 .footer:after {
   clear: both;
 }
-/* line 344, ../scss/style.scss */
+/* line 417, ../scss/style.scss */
 .footer span {
   color: RGBA(72, 31, 15, 1);
   display: inline-block;
   padding: 20px 10px;
 }
-/* line 349, ../scss/style.scss */
+/* line 422, ../scss/style.scss */
 .footer #about {
   float: left;
   width: 30%;
   padding-left: 30px;
 }
-/* line 353, ../scss/style.scss */
+/* line 426, ../scss/style.scss */
 .footer #about h3 {
   padding: 20px 0;
   font-size: 23px;
 }
-/* line 358, ../scss/style.scss */
+/* line 431, ../scss/style.scss */
 .footer #contact {
   float: left;
   width: 17%;
   line-height: 23px;
 }
-/* line 361, ../scss/style.scss */
+/* line 434, ../scss/style.scss */
 .footer #contact h3 {
   padding: 20px 0;
   font-size: 23px;
 }
-/* line 366, ../scss/style.scss */
+/* line 439, ../scss/style.scss */
 .footer #contact li {
   list-style: disc;
 }
-/* line 370, ../scss/style.scss */
+/* line 443, ../scss/style.scss */
 .footer #f_logo {
   float: right;
   width: 30%;
@@ -518,22 +582,22 @@ a {
   padding-right: 50px;
   padding-top: 50px;
 }
-/* line 377, ../scss/style.scss */
+/* line 450, ../scss/style.scss */
 .footer #f_logo h2 {
   font-weight: 900;
 }
-/* line 380, ../scss/style.scss */
+/* line 453, ../scss/style.scss */
 .footer #f_logo .f_logo {
   display: inline-block;
   max-width: 100%;
 }
-/* line 384, ../scss/style.scss */
+/* line 457, ../scss/style.scss */
 .footer #f_logo #facebook, .footer #f_logo #twitter, .footer #f_logo #google {
   width: 30px;
   cursor: pointer;
   border: solid 1px RGBA(239, 233, 231, 1);
 }
-/* line 389, ../scss/style.scss */
+/* line 462, ../scss/style.scss */
 .footer #f_logo #facebook:hover, .footer #f_logo #twitter:hover, .footer #f_logo #google:hover {
   border: none;
 }
