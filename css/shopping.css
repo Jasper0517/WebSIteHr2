@@ -1,5 +1,83 @@
-/* line 13, ../scss/shopping.scss */
+/* line 12, ../scss/shopping.scss */
+#body {
+  padding: 30px 0;
+  background: RGBA(239, 233, 231, 1);
+}
+/* line 15, ../scss/shopping.scss */
 #body div {
-  width: 100%/2;
-  border-bottom: RGBA(30, 30, 30, 1);
+  display: inline-block;
+}
+/* line 19, ../scss/shopping.scss */
+#body #body_menu {
+  width: calc(100%/6);
+  margin-left: 30px;
+}
+/* line 22, ../scss/shopping.scss */
+#body #body_menu img {
+  max-width: 10%;
+  display: inline-block;
+}
+/* line 26, ../scss/shopping.scss */
+#body #body_menu p {
+  color: RGBA(70, 28, 13, 1);
+  display: inline-block;
+}
+/* line 30, ../scss/shopping.scss */
+#body #body_menu ul {
+  padding: 10px 0;
+}
+/* line 32, ../scss/shopping.scss */
+#body #body_menu ul li {
+  padding: 10px 0;
+  border-bottom: solid 1px RGBA(70, 28, 13, 1);
+}
+/* line 35, ../scss/shopping.scss */
+#body #body_menu ul li a {
+  padding-left: 5px;
+  color: RGBA(70, 28, 13, 1);
+}
+/* line 38, ../scss/shopping.scss */
+#body #body_menu ul li a:hover {
+  transition: color 0.3s;
+  color: red;
+}
+/* line 46, ../scss/shopping.scss */
+#body #body_itmes {
+  width: calc(100%/2 * 1.4);
+  margin: 0 40px 0 10px;
+}
+/* line 49, ../scss/shopping.scss */
+#body #body_itmes #toolbar {
+  height: 50px;
+  width: 100%;
+}
+/* line 52, ../scss/shopping.scss */
+#body #body_itmes #toolbar input[type="text"] {
+  width: 400px;
+  height: 25px;
+  border: 1.5px solid RGBA(58, 13, 0, 1);
+  background: RGBA(239, 233, 231, 1);
+}
+/* line 58, ../scss/shopping.scss */
+#body #body_itmes #toolbar #search {
+  position: absolute;
+  width: 25px;
+  background: RGBA(58, 13, 0, 1);
+  margin: 0 -7px;
+}
+/* line 64, ../scss/shopping.scss */
+#body #body_itmes #toolbar #cart {
+  width: 25px;
+}
+/* line 67, ../scss/shopping.scss */
+#body #body_itmes #toolbar p {
+  display: inline-block;
+  padding: 0 30px 0 150px;
+  border-right: 1px solid RGBA(58, 13, 0, 1);
+}
+/* line 74, ../scss/shopping.scss */
+#body #body_itmes #items .items {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
 }

@@ -194,7 +194,7 @@ a {
 }
 @media (max-width: 500px) {
   /* line 130, ../scss/style.scss */
-  .header .slogan {
+  .header .slogborderan {
     display: none;
   }
   /* line 133, ../scss/style.scss */
