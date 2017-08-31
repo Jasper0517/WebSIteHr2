@@ -1,3 +1,5 @@
+@import "compass/reset";
+
 @mixin clearfix {
     &:after, &:before {
       content: "";
@@ -10,14 +12,18 @@
   }
 
   #body{
+    max-width: 100%;
+    max-height: 100%;
     padding: 30px 0;
     background: RGBA(239, 233, 231, 1.00);
     div{
         display: inline-block;
-        // border: solid 1px RGBA(148, 149, 149, 1.00);   
+        // border: solid 1px black;  
+        height: 100%;        
     }
     #body_menu{
-        width: calc(100%/6); 
+        position: absolute;
+        width: calc(100%/5); 
         margin-left: 30px;
         img{
             max-width: 10%;
@@ -49,7 +55,7 @@
     }
     #body_itmes{
         width: calc(100%/2 * 1.4);  
-        margin: 0 40px 0 10px;  
+        margin: 0 10px 0 280px;  
         #toolbar{
             height: 50px;
             width: 100%;
@@ -82,7 +88,7 @@
             .items{
                 display: inline-block;
                 width: 200px;
-                height: 200px;
+                height: 250px;
             }
         }    
     }
