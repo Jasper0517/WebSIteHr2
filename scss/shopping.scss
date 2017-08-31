@@ -69,19 +69,35 @@
                 position: absolute;
                 width: 25px;
                 background: RGBA(58, 13, 0, 1.00);
-                margin: 0 -7px;
+                margin: 0 -5px;
+                cursor: pointer;                           
+                &:hover{
+                    transition: background 0.3s;           
+                    background: RGBA(239, 233, 231, 1.00);     
+                }   
             }
             #cart{
                 line-height: 50px;
                 position: absolute; 
                 padding-left: 10px;  
                 top: 420px;
-                width: 50px;                
+                width: 40px; 
+                cursor: pointer;                                           
+                &:hover{
+                    transition: width 0.3s;           
+                    width: 50px;                 
+                }            
             }
             p{
                 display: inline-block;
                 padding: 0 30px 0 150px;
                 border-right: 1px solid RGBA(58, 13, 0, 1.00);
+                cursor: pointer;    
+                color: RGBA(58, 13, 0, 1.00);
+                &:hover{
+                    transition: color 0.2s;           
+                    color: red;                 
+                }                                                           
             }         
         }
         #items{

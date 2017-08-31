@@ -137,23 +137,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   width: 25px;
   background: RGBA(58, 13, 0, 1);
-  margin: 0 -7px;
+  margin: 0 -5px;
+  cursor: pointer;
 }
 /* line 74, ../scss/shopping.scss */
+#body #body_itmes #toolbar #search:hover {
+  transition: background 0.3s;
+  background: RGBA(239, 233, 231, 1);
+}
+/* line 79, ../scss/shopping.scss */
 #body #body_itmes #toolbar #cart {
   line-height: 50px;
   position: absolute;
   padding-left: 10px;
   top: 420px;
+  width: 40px;
+  cursor: pointer;
+}
+/* line 86, ../scss/shopping.scss */
+#body #body_itmes #toolbar #cart:hover {
+  transition: width 0.3s;
   width: 50px;
 }
-/* line 81, ../scss/shopping.scss */
+/* line 91, ../scss/shopping.scss */
 #body #body_itmes #toolbar p {
   display: inline-block;
   padding: 0 30px 0 150px;
   border-right: 1px solid RGBA(58, 13, 0, 1);
+  cursor: pointer;
+  color: RGBA(58, 13, 0, 1);
 }
-/* line 88, ../scss/shopping.scss */
+/* line 97, ../scss/shopping.scss */
+#body #body_itmes #toolbar p:hover {
+  transition: color 0.2s;
+  color: red;
+}
+/* line 104, ../scss/shopping.scss */
 #body #body_itmes #items .items {
   display: inline-block;
   width: 200px;
