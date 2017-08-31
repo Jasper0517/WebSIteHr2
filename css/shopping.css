@@ -36,46 +36,55 @@
   padding-left: 5px;
   color: RGBA(70, 28, 13, 1);
 }
-/* line 38, ../scss/shopping.scss */
-#body #body_menu ul li a:hover {
-  transition: color 0.3s;
-  color: red;
+/* line 39, ../scss/shopping.scss */
+#body #body_menu ul li:hover {
+  transition: background 0.3s;
+  background: RGBA(70, 28, 13, 1);
 }
-/* line 46, ../scss/shopping.scss */
+/* line 42, ../scss/shopping.scss */
+#body #body_menu ul li:hover a {
+  transition: color 0.3s;
+  color: white;
+}
+/* line 50, ../scss/shopping.scss */
 #body #body_itmes {
   width: calc(100%/2 * 1.4);
   margin: 0 40px 0 10px;
 }
-/* line 49, ../scss/shopping.scss */
+/* line 53, ../scss/shopping.scss */
 #body #body_itmes #toolbar {
   height: 50px;
   width: 100%;
 }
-/* line 52, ../scss/shopping.scss */
+/* line 56, ../scss/shopping.scss */
 #body #body_itmes #toolbar input[type="text"] {
   width: 400px;
   height: 25px;
   border: 1.5px solid RGBA(58, 13, 0, 1);
   background: RGBA(239, 233, 231, 1);
 }
-/* line 58, ../scss/shopping.scss */
+/* line 62, ../scss/shopping.scss */
 #body #body_itmes #toolbar #search {
   position: absolute;
   width: 25px;
   background: RGBA(58, 13, 0, 1);
   margin: 0 -7px;
 }
-/* line 64, ../scss/shopping.scss */
+/* line 68, ../scss/shopping.scss */
 #body #body_itmes #toolbar #cart {
-  width: 25px;
+  line-height: 50px;
+  position: absolute;
+  padding-left: 10px;
+  top: 420px;
+  width: 50px;
 }
-/* line 67, ../scss/shopping.scss */
+/* line 75, ../scss/shopping.scss */
 #body #body_itmes #toolbar p {
   display: inline-block;
   padding: 0 30px 0 150px;
   border-right: 1px solid RGBA(58, 13, 0, 1);
 }
-/* line 74, ../scss/shopping.scss */
+/* line 82, ../scss/shopping.scss */
 #body #body_itmes #items .items {
   display: inline-block;
   width: 200px;

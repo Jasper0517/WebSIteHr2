@@ -194,7 +194,7 @@ a {
 }
 @media (max-width: 500px) {
   /* line 130, ../scss/style.scss */
-  .header .slogborderan {
+  .header .slogan {
     display: none;
   }
   /* line 133, ../scss/style.scss */
@@ -218,7 +218,7 @@ a {
   }
   /* line 150, ../scss/style.scss */
   .header .contentshow {
-    transition: 1s background-color;
+    transition: 0.5s background-color;
     background-color: RGBA(6, 0, 0, 0.8);
     right: 9px;
     top: 40px;

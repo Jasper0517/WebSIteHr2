@@ -35,11 +35,15 @@
                 a{
                     padding-left: 5px;
                     color: RGBA(70, 28, 13, 1.00);
-                    &:hover{
-                        transition: color 0.3s;           
-                        color: red;    
-                    }
                 } 
+                &:hover{
+                    transition: background 0.3s;           
+                    background: RGBA(70, 28, 13, 1.00);  
+                    a{
+                        transition: color 0.3s;           
+                        color: white;  
+                    }
+                }
             }
         }
     }
@@ -62,7 +66,11 @@
                 margin: 0 -7px;
             }
             #cart{
-                width: 25px;                
+                line-height: 50px;
+                position: absolute; 
+                padding-left: 10px;  
+                top: 420px;
+                width: 50px;                
             }
             p{
                 display: inline-block;
