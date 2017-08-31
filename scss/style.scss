@@ -28,9 +28,9 @@ a{
 }
 
 .header{
-    display: block;
+    // display: block;
     position: relative;
-    max-width: 100%;
+    width: 100%;
     max-height: 400px;
     background: black;
     margin: 0 auto;
@@ -43,10 +43,26 @@ a{
         max-height: 100%;
     }
     .topbar{
-        position: absolute;
-        width: 100%;
+        position: fixed;     
+        width: calc(100% - calc(100% - 1000px)) ;
         max-height: 52px;
         background: RGBA(6, 0, 0, 0.7);
+        ul{
+            float:right;
+            li{
+                float:left;
+                line-height: 52px;
+                padding-top: 10px;
+                padding-right: 40px;
+                a{              
+                    color: RGBA(208, 207, 207, 1.00);   
+                    &:hover{
+                        transition: color 0.4s;
+                        color: white;
+                    }             
+                }
+            }
+        }
     }
     .logo{
         display: inline-block;                
@@ -86,20 +102,11 @@ a{
             width: 10px;
         }
     }
-    ul{
-        float:right;
-        li{
-            float:left;
-            line-height: 52px;
-            padding-top: 10px;
-            padding-right: 40px;
-            a{              
-                color: RGBA(208, 207, 207, 1.00);   
-                &:hover{
-                    transition: color 0.4s;
-                    color: white;
-                }             
-            }
+}
+@media(max-width: 999px){
+    .header{
+        .topbar{
+            width: 100%;        
         }
     }
 }
@@ -129,19 +136,17 @@ a{
         ul{
             display: none;
             overflow: hidden;
-        }             
+        }   
+        //控制目錄鍵          
         #content{
-                display: inline-flex;               
-                position: fixed;
-                right: 10px;
-                // box-shadow: 1px 1px 1px black;
-                // background-color: RGBA(6, 0, 0, 0.8);                
-                // width: 30px;
-                // margin-left: 100px;
-                margin-top: 8px;           
-                max-height: 30px;
-                cursor: pointer;
-            } 
+            display: inline-flex;               
+            position: fixed;
+            right: 10px;
+            margin-top: 8px;           
+            max-height: 30px;
+            cursor: pointer;
+            background: RGBA(30, 30, 30, 0);
+        } 
         .contentshow{
             transition: 1s background-color;
             background-color: RGBA(6, 0, 0, 0.8);
@@ -150,8 +155,7 @@ a{
             width: 150px;
             height: 150px;    
             position: fixed;                        
-        } 
-        // @include clearfix;        
+        }     
         #contentmain{
             max-width: 50%;
         }
@@ -160,12 +164,10 @@ a{
 
 
 .features{
-    // position: relative;
     display: block;
     background: RGBA(239, 233, 231, 1.00);
     max-width: 1000px;
     width: 100%;
-    // height: 560px;
     padding: 10px 0;
     text-align: center;
     .outside{
@@ -201,8 +203,6 @@ a{
     .pics{
             display: inline-block;                
             max-width: calc(90%/3);  
-            // border: solid 1px red;                                 
-            // margin: 0 50px;  
             font-size: 18px;
             color: RGBA(98, 62, 49, 1.00);
             h3{
@@ -249,7 +249,15 @@ a{
 @media(max-width: 700px){
     .features{
         .pics{
-            max-width: 50%;
+            max-width: 60%;
+        }
+    }
+}
+
+@media(max-width: 400px){
+    .features{
+        .pics{
+            max-width: 90%;
         }
     }
 }
@@ -304,7 +312,7 @@ a{
     }
 }
 .listen{
-    position: relative;       
+    // position: relative;       
     background-color: RGBA(239, 233, 231, 1.00);
     max-width: 100%;
     width: 100%;  
@@ -331,17 +339,16 @@ a{
             border-radius: 100%;
         }
         .name{
-            width: 70%;
+            position: absolute;
+            line-height: 67px;
+            right: 10%;
+            width: 40%;
             display: inline-block;
-            // line-height: 58px;
-            // margin-bottom: 100px;            
-            // position: absolute;
-            // top: 0;
-            // right: 0;
         }
         .context{
             max-width: 100%;
-            margin: 100px;
+            display: inline-block;
+            margin: 20px 10px;
         }
         @include clearfix;                            
         .sign{
@@ -350,10 +357,8 @@ a{
             padding-left: 15px;
         }
     }
-    // @include clearfix;
     .text{
         max-width: calc(93%/3);
-        // display: inline-block;
         padding: 0 5%;
         margin: 10px 0;
         float: right;
@@ -368,8 +373,31 @@ a{
 }
 
 @media(max-width: 700px){
-    
+    .listen{
+        .pics{
+            width: 70%;
+            .context{
+                margin: 20px 30px;
+            }
+            .name{
+                right: 20%;                
+            }
+        }
+    }
 }
+
+
+@media(max-width: 400px){
+    .listen{
+        .pics{
+            width: 90%;
+            .name{
+                right: 10%;                
+            }
+        }
+    }
+}
+
 
 .location{
     text-align: center;
@@ -399,7 +427,7 @@ a{
         width: 90%;        
         text-align: left;
         float: right;
-        color: RGBA(108, 77, 66, 1.00);        
+        color: RGBA(108, 77, 66, 1.00);  
         p{
             padding: 10px 0;
             font-size: 14px;
@@ -446,6 +474,24 @@ a{
         }
     }
 }
+
+@media(max-width: 700px){
+    .location{
+        img{
+            margin: 0 10px;    
+            padding: 0 0 0 0;                   
+        }
+        .form{
+            float: none; 
+            margin: 0 10%;           
+        }
+        span{
+            max-width: 96%;
+            display: block;      
+        }
+    }
+}
+
 .footer{
     background: RGBA(239, 233, 231, 1.00);
     max-width: 100%;
@@ -502,3 +548,35 @@ a{
         }
     }
 }
+
+@media(max-width: 700px){
+    .footer{
+        #about{
+            float: none;
+            width: 100%;
+        }
+
+        #contact{
+            padding-left: 30px;        
+            float: none;
+            width: 100%;
+            li{
+                padding-left: 30px;                    
+            }            
+        }
+
+        #f_logo{
+            padding-left: 30px;        
+            // float: left;
+            // text-align: left;        
+            width: 90%;
+        }
+    }  
+}
+
+@media(max-width: 550px){
+    .f_logo{
+        width: 100%;
+    }   
+}
+    
