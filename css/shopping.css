@@ -78,7 +78,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 24, ../scss/shopping.scss */
 #body #body_menu {
   position: absolute;
-  width: calc(100%/5);
+  width: calc(100%/6);
   margin-left: 30px;
 }
 /* line 28, ../scss/shopping.scss */
