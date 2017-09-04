@@ -34,6 +34,7 @@ a{
     max-height: 400px;
     background: black;
     margin: 0 auto;
+    z-index: 9999;
     #content{
         display: none;
         overflow: hidden;
