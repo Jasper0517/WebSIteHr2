@@ -12,7 +12,6 @@
 }
 
 #body {
-    
     max-width: 1000px;
     max-height: 100%;
     margin: 0 auto;    
@@ -22,6 +21,7 @@
         display: inline-block; // border: solid 1px black;  
         height: 100%;
     }
+    //左側目錄
     #body_menu {
         position: absolute;
         width: calc(100%/8);
@@ -55,7 +55,7 @@
             }
         }
     }
-    //項目    
+    //購物項目    
     #body_itmes {
         width: calc(100%/2 * 1.4);
         margin: 0 10px 0 280px;
@@ -166,7 +166,8 @@
         }
     }
 
-    @media(max-width: 950px){
+    //949px
+    @media(max-width: 949px){
         #body_menu{
             width: calc(100%/6);        
             margin-left: 10px;        
@@ -189,6 +190,7 @@
         }    
     }
 
+    //699px
     @media(max-width: 699px){
         #body_menu{
             display: none;
@@ -200,7 +202,8 @@
         }
     }
 
-    @media(max-width: 500px){
+    //499px
+    @media(max-width: 499px){
         #body_itmes{
             #toolbar {
                 input[type="text"] {
