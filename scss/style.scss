@@ -65,6 +65,12 @@ a{
             }
         }
     }
+    .contentmain{
+        ul{
+            display: none;
+            overflow: hidden; 
+        }
+    }
     .logo{
         display: inline-block;                
         color: white;
@@ -138,6 +144,9 @@ a{
             display: none;
             overflow: hidden;
         }   
+        .topbar{
+            height: 40px;
+        }
         //控制目錄鍵          
         #content{
             display: inline-flex;               
@@ -150,15 +159,33 @@ a{
         } 
         .contentshow{
             transition: 0.5s background-color;
-            background-color: RGBA(6, 0, 0, 0.8);
-            right: 9px;
-            top: 40px;
+            background-color: RGBA(6, 0, 0, 0.7);
+            top: 39px;
             width: 150px;
-            height: 150px;    
-            position: fixed;                        
+            height: 40px;    
+            position: fixed; 
+            ul{
+                transition: 0.5s overflow;            
+                display: block;
+                overflow: visible; 
+                margin: 0 auto;  
+                text-align: center;    
+                li{
+                    float: left;
+                    padding: 10px 20px;         
+                    a{         
+                        font-size: 18px;
+                        color: RGBA(208, 207, 207, 1.00);   
+                        &:hover{
+                            transition: color 0.4s;
+                            color: white;
+                        }             
+                    }
+                }
+            }                       
         }     
         #contentmain{
-            max-width: 50%;
+            width: 100%;
         }
     }
 }
