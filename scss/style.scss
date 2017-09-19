@@ -460,7 +460,7 @@ a{
             padding: 10px 0;
             font-size: 14px;
         }
-        input[type="text"]{
+        input[type="text"],input[type="email"],input[type="number"]{
             display: block;
             width: 90%;
             height: 25px;
@@ -476,25 +476,24 @@ a{
             margin-top: 40px;
             color: white;
             border: none;
-            border-radius: 5px;            
+            border-radius: 5px;
+            &:hover{
+                transition: background-color 1s;                
+                transition: color 1s;     
+                transition: font-size 0.5s;                                                
+                background-color: RGBA(246, 244, 243, 1.00); 
+                color: RGBA(245, 108, 35, 1); 
+            }                
         }
         input[type="radio"]{
             margin-right: 20px;
         }
         .orange{
-            background-color: RGBA(245, 108, 35, .500);
-            margin-right: 50px;   
-            &:hover{
-                transition: background-color 1s;                
-                background-color: RGBA(245, 108, 35, 1.00);                
-            }         
+            background-color: RGBA(245, 108, 35, 1);
+            margin-right: 50px;     
         }
         .gray{
-            background-color: RGBA(160, 158, 158, .500);
-            &:hover{
-                transition: background-color 1s;
-                background-color: RGBA(160, 158, 158, 1.00);                
-            }
+            background-color: RGBA(160, 158, 158, 1);
         }
         div{
             width: 90%;

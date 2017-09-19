@@ -59,22 +59,19 @@
                 margin: 20px 0 20px 10px;
                 color: white;
                 border: none;
-                border-radius: 5px;            
-            }
-            .orange{
-                background-color: RGBA(245, 108, 35, .500);
-                // margin-right: 50px;   
+                border-radius: 5px;   
                 &:hover{
                     transition: background-color 1s;                
-                    background-color: RGBA(245, 108, 35, 1.00);                
-                }         
+                    transition: color 1s;     
+                    background-color: RGBA(239, 233, 231, 1.00); 
+                    color: RGBA(245, 108, 35, 1); 
+                }               
+            }
+            .orange{
+                background-color: RGBA(245, 108, 35, .500);          
             }
             .gray{
                 background-color: RGBA(160, 158, 158, .500);
-                &:hover{
-                    transition: background-color 1s;
-                    background-color: RGBA(160, 158, 158, 1.00);                
-                }
             }
         }
         width: 55%;

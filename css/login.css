@@ -125,27 +125,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: none;
   border-radius: 5px;
 }
-/* line 64, ../scss/login.scss */
+/* line 63, ../scss/login.scss */
+#login div span input[type="submit"]:hover {
+  transition: background-color 1s;
+  transition: color 1s;
+  background-color: RGBA(239, 233, 231, 1);
+  color: RGBA(245, 108, 35, 1);
+}
+/* line 70, ../scss/login.scss */
 #login div span .orange {
   background-color: RGBA(245, 108, 35, 0.5);
 }
-/* line 67, ../scss/login.scss */
-#login div span .orange:hover {
-  transition: background-color 1s;
-  background-color: RGBA(245, 108, 35, 1);
-}
-/* line 72, ../scss/login.scss */
+/* line 73, ../scss/login.scss */
 #login div span .gray {
   background-color: RGBA(160, 158, 158, 0.5);
 }
-/* line 74, ../scss/login.scss */
-#login div span .gray:hover {
-  transition: background-color 1s;
-  background-color: RGBA(160, 158, 158, 1);
-}
 
 @media (max-width: 749px) {
-  /* line 88, ../scss/login.scss */
+  /* line 85, ../scss/login.scss */
   #login div span {
     width: 90%;
   }
