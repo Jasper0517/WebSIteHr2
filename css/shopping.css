@@ -271,9 +271,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (max-width: 699px) {
   /* line 195, ../scss/shopping.scss */
   #body #body_menu {
-    display: none;
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
   }
-  /* line 198, ../scss/shopping.scss */
+  /* line 200, ../scss/shopping.scss */
+  #body #body_menu p {
+    font-size: 20px;
+  }
+  /* line 204, ../scss/shopping.scss */
+  #body #body_menu ul li {
+    border: none;
+    display: inline-block;
+  }
+  /* line 205, ../scss/shopping.scss */
+  #body #body_menu ul li a {
+    padding-left: 0;
+  }
+  /* line 213, ../scss/shopping.scss */
   #body #body_itmes {
     width: 100%;
     margin: 0 auto;
@@ -281,32 +297,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media (max-width: 499px) {
-  /* line 208, ../scss/shopping.scss */
+  /* line 223, ../scss/shopping.scss */
   #body #body_itmes #toolbar {
     width: 60%;
   }
-  /* line 209, ../scss/shopping.scss */
+  /* line 224, ../scss/shopping.scss */
   #body #body_itmes #toolbar input[type="text"] {
     width: 90%;
   }
-  /* line 213, ../scss/shopping.scss */
+  /* line 228, ../scss/shopping.scss */
   #body #body_itmes #toolbar p {
     padding: 0 0 10px 0;
     margin: 20px 0 10px 0;
     border-right: none;
   }
-  /* line 218, ../scss/shopping.scss */
+  /* line 233, ../scss/shopping.scss */
   #body #body_itmes #toolbar #cart {
     position: relative;
   }
-  /* line 223, ../scss/shopping.scss */
+  /* line 238, ../scss/shopping.scss */
   #body #body_itmes #items .items {
     margin: 10px 0 20px 0;
     border-left: 2px solid #D1CCCA;
     border-top: 2px solid #D1CCCA;
     width: calc(90%);
   }
-  /* line 228, ../scss/shopping.scss */
+  /* line 243, ../scss/shopping.scss */
   #body #body_itmes #items .items .item_cart {
     max-width: 50%;
     margin: 10px auto;

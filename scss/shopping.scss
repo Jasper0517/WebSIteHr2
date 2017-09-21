@@ -193,7 +193,22 @@
     //699px
     @media(max-width: 699px){
         #body_menu{
-            display: none;
+            width: 100%;            
+            display: block;
+            position: relative;
+            text-align: center;
+            p{
+                font-size: 20px;
+            }
+            ul{
+                li{
+                    a{
+                        padding-left: 0;
+                    }
+                    border: none;
+                    display: inline-block;
+                }
+            }
         }
         #body_itmes{
             width: 100%;
