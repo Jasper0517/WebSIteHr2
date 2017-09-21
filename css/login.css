@@ -134,11 +134,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 70, ../scss/login.scss */
 #login div span .orange {
-  background-color: RGBA(245, 108, 35, 0.5);
+  background-color: RGBA(245, 108, 35, 1);
 }
 /* line 73, ../scss/login.scss */
 #login div span .gray {
-  background-color: RGBA(160, 158, 158, 0.5);
+  background-color: RGBA(160, 158, 158, 1);
 }
 
 @media (max-width: 749px) {
